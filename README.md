@@ -4,7 +4,7 @@ StudyCourt is a four-page study planner made with HTML, CSS and JavaScript. It h
 
 ## Repository and project structure
 
-The GitHub Classroom repository URL should be placed here after the course invitation is accepted.
+Interim cloud backup: [hjd1930212682-netizen/3.1](https://github.com/hjd1930212682-netizen/3.1). This personal repository is **not** the allocated GitHub Classroom repository. The Classroom URL must be added after the course invitation is accepted.
 
 ```text
 index.html                    Entry page for GitHub Pages
@@ -60,6 +60,7 @@ The project log contains screenshots of both issues before and after their fixes
 - Site content and three SVG study illustrations were created for this project.
 - CSS layout reference: [MDN CSS grid layout](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Grids).
 - Date formatting reference: [MDN Intl.DateTimeFormat](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat).
+- Project planning reference: [Principles behind the Agile Manifesto](https://agilemanifesto.org/principles.html).
 
 ## License
 

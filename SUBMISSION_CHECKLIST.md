@@ -16,6 +16,7 @@ Canvas page checked on 12 November 2026: [3.1 Web Page Development](https://aemg
 
 ## Needed for course submission
 
+- [x] Push a backup to the personal repository `hjd1930212682-netizen/3.1`.
 - [ ] Locate and accept the **Assignment 3 GitHub Classroom** invitation, choosing student identifier `2518040124`.
 - [ ] Push the project to that allocated Classroom repository with genuine, meaningful commits.
 - [ ] Add the actual Classroom repository URL to `README.md`.
