@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Manage study tasks in StudyCourt."><title>StudyCourt | My tasks</title><link rel="stylesheet" href="../css/styles.css?v=2"><script defer src="../js/site.js?v=2"></script><script defer src="../js/tasks.js"></script></head>
+<body data-page="tasks">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header"><div class="header-inner"><a class="brand" href="index.html"><span class="brand-mark">SC</span><span>StudyCourt</span></a><nav aria-label="Main navigation"><a href="index.html">Home</a><a aria-current="page" href="tasks.html">My tasks</a><a href="blog.html">Project log</a><a href="privacy.html">Ethics & privacy</a></nav></div></header>
+  <main id="main" class="wrap task-page">
+    <div class="page-intro"><p class="eyebrow">The planner</p><h1>My study tasks</h1><p>Add a task, keep its details current, and see everything in one place.</p></div>
+    <section id="login-panel" class="login-panel" aria-labelledby="login-heading">
+      <div><p class="eyebrow">Basic access check</p><h2 id="login-heading">Sign in to your planner</h2><p>This classroom demo keeps tasks in this browser. The sample login is <strong>student</strong> / <strong>Study2026!</strong>.</p><p class="small-note">This client-side login is for the course exercise; it does not provide secure account protection.</p></div>
+      <form id="login-form" novalidate><div class="field"><label for="username">Username</label><input id="username" name="username" autocomplete="username" required></div><div class="field"><label for="password">Password</label><input id="password" name="password" type="password" autocomplete="current-password" required></div><p id="login-error" class="form-error" role="alert" hidden></p><button class="button button-primary" type="submit">Sign in</button></form>
+    </section>
+    <div id="planner" hidden>
+      <div class="planner-top"><div><p class="eyebrow">Workspace</p><h2>Plan the next step.</h2></div><button id="logout-button" class="button button-outline" type="button">Sign out</button></div>
+      <div class="stats" aria-label="Task summary"><div><span id="total-count">0</span><p>Total tasks</p></div><div><span id="upcoming-count">0</span><p>Due in 7 days</p></div><div><span id="overdue-count">0</span><p>Overdue</p></div></div>
+      <div class="planner-grid">
+        <section class="panel" aria-labelledby="task-form-heading"><div class="panel-heading"><h3 id="task-form-heading">Add a study task</h3><p>Fields marked * are required.</p></div>
+          <form id="task-form" novalidate>
+            <input id="editing-id" type="hidden">
+            <div class="field"><label for="task-title">Task title *</label><input id="task-title" name="task-title" maxlength="80" placeholder="Complete Assignment 3" required><span class="field-error" id="task-title-error"></span></div>
+            <div class="field-grid"><div class="field"><label for="course-code">Course code *</label><input id="course-code" name="course-code" maxlength="12" placeholder="INFO1012" required><span class="field-error" id="course-code-error"></span></div><div class="field"><label for="course-name">Course name *</label><input id="course-name" name="course-name" maxlength="80" placeholder="Information Technology Systems" required><span class="field-error" id="course-name-error"></span></div></div>
+            <div class="field"><label for="due-date">Due date *</label><input id="due-date" name="due-date" type="date" required><span class="field-error" id="due-date-error"></span></div>
+            <div class="field"><label for="description">Description *</label><textarea id="description" name="description" rows="3" maxlength="500" placeholder="What needs to be done?" required></textarea><span class="field-error" id="description-error"></span></div>
+            <div class="field"><label for="notes">Additional notes</label><textarea id="notes" name="notes" rows="2" maxlength="500" placeholder="Links, reminders or a first step"></textarea><span class="field-error" id="notes-error"></span></div>
+            <div class="form-actions"><button id="save-button" class="button button-primary" type="submit">Add task</button><button id="cancel-edit" class="button button-light" type="button" hidden>Cancel edit</button></div>
+          </form>
+        </section>
+        <section class="panel task-list-panel" aria-labelledby="task-list-heading"><div class="panel-heading"><h3 id="task-list-heading">Task list</h3><p>Find a course or task, then edit its details.</p></div><div class="filters"><label class="field" for="task-search"><span>Search tasks</span><input id="task-search" type="search" placeholder="Search by title or course"></label><label class="field" for="task-filter"><span>Show</span><select id="task-filter"><option value="all">All tasks</option><option value="upcoming">Upcoming</option><option value="overdue">Overdue</option></select></label></div><p id="task-status" class="status-message" role="status" aria-live="polite"></p><div id="task-list" class="task-list"></div></section>
+      </div>
+    </div>
+  </main>
+  <footer class="site-footer"><div class="wrap footer-inner"><span>© 2026 StudyCourt · Hao Jinde</span><span id="current-datetime" aria-live="off"></span></div></footer>
+</body>
+</html>
+
+

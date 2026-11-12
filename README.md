@@ -64,4 +64,3 @@ The project log contains screenshots of both issues before and after their fixes
 ## License
 
 MIT. See [LICENSE](LICENSE).
-
